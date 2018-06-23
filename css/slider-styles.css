@@ -4,6 +4,8 @@ body  {
   margin: 0;
   font-size: 18px;
   line-height: 1.2;
+
+  background-color: #849d8f;
 }
 
 /* Слайдер */
@@ -21,6 +23,24 @@ body > input[type="radio"]  {
   background-position: top center;
   
   transition: background-image 500ms ease, background-color 500ms ease; 
+ 
+}
+
+
+.site-wrapper::before,
+.site-wrapper::after  {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before,
+.site-wrapper::after  {
+  background-image: url("../img/slide-1.png");
+}
+
+.site-wrapper::after  {
+  background-image: url("../img/slide-2.png");
 }
 
 .content-wrapper  {
