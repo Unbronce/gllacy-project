@@ -39,7 +39,8 @@ body > input[type="radio"]  {
 
 .site-wrapper {
   min-width: 1200px;
-  min-height: 100vh; /*временно*/
+  min-height: 243vh; 
+  /*временно*/
 
   
   background-repeat: no-repeat;
@@ -77,8 +78,8 @@ body > input[type="radio"]  {
 
 .main-header  { 
 
-  background-color: rgba(0,0,0, 0.4);
-  box-shadow: inset 0 0 0 4px #000000; 
+  /* background-color: rgba(0,0,0, 0.4);
+  box-shadow: inset 0 0 0 4px #000000;  */
 }
 
 .slider {  
@@ -621,6 +622,7 @@ p.time-table {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 96px;
 }
 
 .offers li  {
@@ -684,6 +686,320 @@ p.time-table {
   bottom: 18px;
   left: 119px;
 }
+
+p.offers-info  {  
+  padding-top: 283px;  
+  position: static;
+  vertical-align: bottom;
+  text-align: center;  
+  text-decoration: underline;  
+  text-decoration-color: rgba(255, 255, 255, 0.2);  
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #fff;
+  text-shadow: none;    
+}
+
+.pattern  {
+  margin: 0;
+  padding: 0;  
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-image: url("../img/pattern.jpg");
+  background-repeat: repeat;
+
+}
+
+.quality  {
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+  padding-right: 126px;
+  padding-left: 21px;  
+  margin-bottom: 10px;
+  color: #323232; 
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.features {
+  
+  margin: 0;
+  padding: 0;
+  padding-left: 76px;
+  padding-right: 33px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  
+ 
+}
+
+.features li  {  
+  position: relative;
+  width: 476px;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;  
+  background-repeat: no-repeat;
+}
+
+
+.features li:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/ice-cream.svg");  
+  top:0;
+  left: -55px;
+}
+
+.features li:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/ice-cream.svg");  
+  top:0;
+  left: -55px;
+}
+
+.features li:nth-child(2)::before {
+  position: absolute;
+  content: "";
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/cow.svg");  
+  top:0;
+  left: -55px;
+}
+
+
+.features li:nth-child(3)::before {
+  position: absolute;
+  content: "";
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/leaf.svg");  
+  top:0;
+  left: -55px;
+}
+
+.features li:nth-child(4)::before {
+  position: absolute;
+  content: "";
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/thermometer.svg");  
+  top:0;
+  left: -55px;
+}
+
+.blog {
+  margin: 0;
+  padding: 0;  
+  width: 560px;
+  height: 220px;
+  background-image: url("../img/strawberry.jpg");
+  background-position: -54px -223px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.blog p {
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  padding-left: 20px;
+  margin-bottom: 11px;
+  color: #323232;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.blog div {
+  width: 281px;
+  height: 84px;
+  margin-left: 20px;
+}
+
+
+.blog b { 
+  text-align: left;
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  border-bottom: 2px solid #323232;
+}
+
+
+.post-mail-wrapper  {
+  
+  margin: 0;
+  padding: 0;
+  padding: 6px;
+  background-image: url("../img/post-mail-background.svg");
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 220px;
+  box-sizing: border-box;
+}
+
+.post-mail-wrapper form  {
+  margin: 0;
+  padding: 0;  
+  width: 549px;
+  height: 210px;
+  border-radius: 10px;
+  background-color: #f8f7f4;
+}
+
+.post-mail-wrapper p  {
+  margin: 0;
+  padding: 0;
+  padding-top: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 38px;
+  color: #5a5a5a;  
+  font-size: 16px;
+  line-height: 22px;
+  
+}
+
+.post-mail-wrapper input  {
+  margin: 0;
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 11px;
+  box-sizing: border-box;
+  font: inherit;
+  width: 368px;
+  height: 44px;
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 5px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  background-color: #ffffff;
+}
+
+.post-mail-wrapper  button  {   
+  font: inherit;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  color: #fefefe;
+  font-size: 18px;  
+  line-height: 24px;
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  opacity: 0.99;
+}
+
+
+
+.info-wrapper {
+  
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.search-info  {
+  position: relative; 
+  width: 1200px;
+  margin: 0 auto; 
+}
+
+.map  {   
+  position: absolute;
+  z-index: 1;  
+}
+
+.contacts {  
+  position: absolute;
+  z-index: 3;
+  top: 62px;
+  right: 27px;
+  padding: 0;
+  padding-left: 25px;
+  z-index: 3;
+  box-sizing: border-box;
+  width: 302px;
+  height: 306px;
+  border-radius: 10px;
+  background-color: #ffffff;  
+ 
+}
+
+.contacts p {
+  margin: 0;
+  padding-top: 32px;
+  padding-right: 129px;
+  color: #323232;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 9px;
+}
+
+.contacts b {
+  display: block;
+  color: #323232;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+p.booking {
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.contacts span  {
+  display: block;
+  color: #323232;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+p.work {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 26px;
+  color: #323232;
+  font-size: 14px;
+  line-height: 22px; 
+
+}
+
+.contacts button  {
+  font: inherit;
+  color: #fff;
+  border: none;
+  padding: 13px 28px;
+  color: #fefefe;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 100px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  opacity: 0.99;
+}
+
+
+
+
 /* основная инфаормация */
 
 
