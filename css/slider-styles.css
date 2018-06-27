@@ -38,7 +38,7 @@ body > input[type="radio"]  {
 }
 
 .site-wrapper {
-  min-width: 940px;
+  min-width: 1200px;
   min-height: 100vh; /*временно*/
 
   
