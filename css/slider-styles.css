@@ -921,7 +921,7 @@ p.offers-info span {
 
 .search-info  {
   position: relative; 
-  width: 1146px;
+ 
   margin: 0;
   
  
@@ -929,6 +929,7 @@ p.offers-info span {
 
 .map  {     
   z-index: 1;  
+  width: 1146px;
   margin-left: -27px;
   margin-right: -27px;
 }
