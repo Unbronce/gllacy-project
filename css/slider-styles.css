@@ -923,12 +923,14 @@ p.offers-info span {
   position: relative; 
   width: 1200px;
   margin: 0;
-  margin-left: -27px;
+  
  
 }
 
 .map  {     
   z-index: 1;  
+  margin-left: -27px;
+  margin-right: -27px;
 }
 
 .contacts {  
