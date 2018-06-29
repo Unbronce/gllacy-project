@@ -4,7 +4,6 @@ body  {
   margin: 0;
   font-size: 18px;
   line-height: 1.2;
-
   background-color: #849d8f;
 }
 
@@ -39,7 +38,7 @@ body > input[type="radio"]  {
 
 .site-wrapper {
   min-width: 1200px;
-  min-height: 243vh; 
+  /* min-height: 243vh;  */
   /*временно*/
 
   
@@ -665,11 +664,12 @@ p.time-table {
   left: 0;
 }
 
-.offers span  {  
+.offers b {  
   position: absolute;
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
   color: #ffffff;  
   font-size: 45px;  
+  font-weight: 500;
   line-height: 45px;
   bottom: 18px;
   left: 0px;
@@ -690,15 +690,18 @@ p.time-table {
 p.offers-info  {  
   padding-top: 283px;  
   position: static;
-  vertical-align: bottom;
+  width: 252px;
+  min-height: 37px; 
   text-align: center;  
-  text-decoration: underline;  
-  text-decoration-color: rgba(255, 255, 255, 0.2);  
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
   color: #fff;
   text-shadow: none;    
+}
+
+p.offers-info span {        
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);  
 }
 
 .pattern  {
@@ -823,18 +826,19 @@ p.offers-info  {
   line-height: 22px;
 }
 
-.blog div {
-  width: 281px;
+.blog h3 {
+  width: 280px;
   height: 84px;
   margin-left: 20px;
 }
 
 
-.blog b { 
+.blog a { 
   text-align: left;
   color: #323232;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   border-bottom: 2px solid #323232;
 }
 
@@ -918,11 +922,11 @@ p.offers-info  {
 .search-info  {
   position: relative; 
   width: 1200px;
-  margin: 0 auto; 
+  margin: 0 -27px; 
+  /* margin-bottom: 18px; */
 }
 
-.map  {   
-  position: absolute;
+.map  {     
   z-index: 1;  
 }
 
@@ -1002,7 +1006,123 @@ p.work {
 
 /* основная инфаормация */
 
+/*подвал*/
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 185px;
+  margin-top: 33px;
+  margin-bottom: 29px;
+}
 
+.social li  {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;  
+  background-repeat: no-repeat;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.social li:nth-child(1) {
+  background-image: url("../img/twitter.svg");
+}
+.social li:nth-child(2) {
+  background-image: url("../img/instagram.svg");
+}
+.social li:nth-child(3) {
+  background-image: url("../img/fb.svg");
+}
+.social li:nth-child(4) {
+  background-image: url("../img/vk.svg");
+}
+
+
+.about-us {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;   
+  justify-content: space-between;  
+  flex-wrap: wrap;  
+  width: 305px;
+  height: 36px;
+  margin-top: 26px;
+   
+}
+
+.about-us li {  
+  position: relative;  
+  margin: 0;
+  padding: 0;  
+}
+
+.about-us li:nth-child(2) {
+  flex-basis: 162px;
+}
+
+
+.about-us a {  
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;  
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+
+.about-us span  {
+  font-weight: 700;
+}
+
+.about-us li:nth-child(1)::before  {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 13px;
+  top: 7px;
+  left: -22px;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+}
+
+.designed {
+  list-style: none;
+  margin: 0;
+  padding: 0;  
+  margin-top: 17px;
+}
+
+.designed p {
+  margin: 0;
+  padding: 0;
+  width: 108px;
+  height: 39px;
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;  
+}
+
+.designed a {
+  color: #fefefe;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.designed span  {
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*подвал*/
 
 
 
