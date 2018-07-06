@@ -284,7 +284,8 @@ ul.sub-menu  {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-ul.main-navigation > li > a:hover {
+
+ ul.main-navigation > li:hover > a {
   padding: 6px 11px;
   color: #323232;  
   font-size: 16px;
@@ -293,7 +294,7 @@ ul.main-navigation > li > a:hover {
   text-decoration: none;
   background-color: #fff;
   border-radius: 100px;  
-}
+} 
 
 
 .sub-menu  b {
@@ -377,7 +378,7 @@ ul.main-navigation > li > a:hover {
   background-position: 9px 9px;
 }
 
-.user-navigation li:nth-child(1) p:hover  {
+.user-navigation li:nth-child(1):hover  p {
   background-color: #fff;
   background-image: url("../img/loupe-color.svg");
   background-repeat: no-repeat;
@@ -394,7 +395,7 @@ ul.main-navigation > li > a:hover {
   background-position: 16px 8px;
 }
 
-.user-navigation li:nth-child(2) p:hover  {
+.user-navigation li:nth-child(2):hover p  {
   background-color: #fff;
   color: #333333;
   padding-left: 44px;
@@ -488,31 +489,20 @@ b.goods {
   line-height: 16px;
 }
 
-.delet-purchase {
+.goods td {
+  text-align: center;
+}
+
+.delet-purchase {  
   font-size: 0;
   background-color: transparent;
   border: 0;
   cursor: pointer;
 }
 
-.goods td:nth-child(1) {
-  width: 18px;
-}
-
-.goods td:nth-child(1)::after {
-  position: absolute;
-  content: "";
-  width: 11px;
-  height: 11px;
-  left: 5px;
-  background-image: url("../img/close.svg");
-  background-repeat: no-repeat;
-  
-}
 
 td:nth-child(2)  {
   width: 54px;
-  text-align: center;
 }
 
 td:nth-child(3) {
@@ -522,17 +512,15 @@ td:nth-child(3) {
 
 td:nth-child(4) {
   width: 120px;
-  text-align: center;
 }
 
 td:nth-child(5) {
   width: 50px;
-  text-align: center;
 } 
 
 
 .purchase-button  {
-  display: block;
+  display: block;  
   padding: 12px;
   margin: 0 0 5px auto;
   border: none;
@@ -775,15 +763,11 @@ p.time-table {
 }
 
 .inner-page .offers li  {
-  margin-bottom: 95px;
+  margin-bottom: 95px;  
 }
 
 
-/* .inner-page .offers li:nth-child(10),
-.inner-page .offers li:nth-child(11),
-.inner-page .offers li:nth-child(12) {
-  margin-bottom: ;
-} */
+
 
 .offers li:nth-child(1) {
   background-image: url("../img/ice-cream-1.png")
@@ -890,6 +874,49 @@ p.offers-info  {
   color: #fff;
   text-shadow: none;    
 }
+
+
+
+.inner-page p.offers-info:hover::before  {
+  position: absolute;
+  z-index: 5;
+  content: "";  
+  display: block;
+  top: -10px;
+  left: -15px;
+  width: 296px;
+  height: 408px;
+  border-radius: 5px;  
+  background-color: rgba(255,255,255, 0.2);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  
+}
+
+
+.ice-cream-btn  {
+  position: absolute;
+  display: none;
+  bottom: -125px;
+  left: 30px;  
+  padding: 15px 18px;
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 100px;
+  box-shadow: 0 1px 2px #ac1000;
+  background-color: #e84d37;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+}
+
+p.offers-info:hover .ice-cream-btn  {
+    display: block; 
+    z-index: 6;
+}
+
+
+
+
 
 p.offers-info span {        
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);  
